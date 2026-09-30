@@ -9,18 +9,18 @@ import sys
 DEFAULT_FILENAME = "words.txt"
 DEFAULT_DUPLICATES = False
 
-
+#función para retornar lista ordenada
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
 
     return sorted(items, reverse=(not ascending))
 
-
+#función para retornar lista de items ingresados por parametro
 def remove_duplicates_from_list(items):
     return list(set(items))
 
-
+#implementación, condición de validación ...
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
     remove_duplicates = DEFAULT_DUPLICATES
